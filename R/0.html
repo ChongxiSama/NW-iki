@@ -22,6 +22,7 @@
 
     h1 {
       font-size: 6vw;
+      max-width: 100%;
       background: linear-gradient(to right, #333, #000);
       color: white;
       padding: 0.5em;
@@ -30,32 +31,47 @@
       border-radius: 0.25em;
     }
 
-    h2 {
-      font-weight: bold;
-      font-size: 1.8em;
-      margin-top: 1.5em;
+    a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-top: 2em;
+    }
+
+    .entry {
       margin-bottom: 0.5em;
     }
 
-    .spoiler {
-      background-color: #444;
-      color: transparent;
-      border-radius: 3px;
-      padding: 0 0.3em;
-      cursor: pointer;
-    }
-    .spoiler:hover {
-      color: white;
+    .date {
+      color: #888;
+      margin-right: 1em;
     }
 
-    p {
-      font-size: 1em;
-      line-height: 1.5;
-      margin: 0.5em 0;
-    }
-
-    ul {
+    .age {
+      color: #555;
       margin-left: 1em;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px dashed #444;
+      margin: 2em 0;
+    }
+    ul {
+  list-style: none;  /* 去掉默认圆点 */
+  padding-left: 0;   /* 去掉左侧缩进 */
+  margin-left: 0;
+    }
+
+    li {
+  margin-left: 0;
     }
 
     @media (max-width: 600px) {
@@ -65,6 +81,7 @@
 
       .container {
         padding: 0 1em;
+        margin: 1.5em auto;
       }
     }
   </style>
@@ -72,6 +89,12 @@
 <body>
   <div class="container">
     <h1>流叶</h1>
+   </script>
+    <div>
+      <a href="https://github.com/ChongxiSama/NW-iki">GitHub</a> --- 团子 ©2025 --- <a href="https://onions.chongxi.top/pages/about.html">About</a>
+    </div>
+    <div>
+    <hr>
 
     <h2>基本信息</h2>
     <ul>
